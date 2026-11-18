@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Điện Tử Văn Trọng — Dịch Vụ Sửa Chữa Hồng Ngự</title>
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        line-height: 1.6;
+        color: #0f0f0f;
+        background-color: #f8fafc;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      /* === Thanh điều hướng === */
+      header {
+        background: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        position: sticky;
+        top: 0;
+        z-index: 99;
+      }
+
+      .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 22px;
+        font-weight: 700;
+        color: #0f4c75;
+      }
+
+      .logo span {
+        color: #3282b8;
+      }
+
+      nav a {
+        color: #555;
+        margin: 0 12px;
+        font-size: 15px;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #3282b8;
+      }
+
+      .btn-phone {
+        background: #3282b8;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: 600;
+        transition: background 0.3s;
+      }
+
+      .btn-phone:hover {
+        background: #0f4c75;
+      }
+
+      /* === Phần Banner Chính === */
+      .hero {
+        background: linear-gradient(135deg, #0f4c75 0%, #3282b8 100%);
+        color: white;
+        padding: 80px 20px;
+      }
+
+      .hero-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+      }
+
+      .hero-text {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .hero-text h1 {
+        font-size: 42px;
+        line-height: 1.2;
+        margin-bottom: 25px;
+      }
+
+      .hero-text h1 span {
+        color: #bbe1fa;
+      }
+
+      .hero-text p {
+        font-size: 17px;
+        opacity: 0.9;
+        margin-bottom: 35px;
+      }
+
+      .hero-buttons a {
+        display: inline-block;
+        padding: 14px 28px;
+        border-radius: 8px;
+        font-weight: 600;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        transition: transform 0.2s;
+      }
+
+      .hero-buttons a:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn-main {
+        background: #bbe1fa;
+        color: #0f4c75;
+      }
+      .btn-outline {
+        border: 2px solid white;
+        color: white;
+        background: transparent;
+      }
+
+      .hero-image {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .hero-image img {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      /* === Phần Dịch Vụ === */
+      .services {
+        max-width: 1200px;
+        margin: 70px auto;
+        padding: 0 20px;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 32px;
+        color: #0f4c75;
+        margin-bottom: 50px;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+      }
+
+      .service-card {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+        text-align: center;
+        transition: transform 0.3s;
+      }
+
+      .service-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .service-card h3 {
+        color: #0f4c75;
+        margin: 15px 0;
+        font-size: 18px;
+      }
+
+      /* === Phần Liên Hệ === */
+      .contact {
+        background: #f0f8fb;
+        padding: 60px 20px;
+      }
+
+      .contact-container {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .contact h2 {
+        color: #0f4c75;
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+
+      .contact-info p {
+        font-size: 18px;
+        margin: 12px 0;
+      }
+
+      .contact-info a {
+        color: #3282b8;
+        font-weight: 500;
+      }
+
+      /* === Chân Trang === */
+      footer {
+        background: #0f4c75;
+        color: white;
+        text-align: center;
+        padding: 25px 20px;
+        font-size: 14px;
+      }
+
+      /* === Điện thoại === */
+      @media (max-width: 768px) {
+        nav {
+          display: none;
+        }
+        .hero-text h1 {
+          font-size: 30px;
+        }
+      } </style>
+  </head>
+  <body>
+    <!-- Thanh điều hướng -->
+    <header>
+      <div class="nav-container">
+        <div class="logo">🔧 ĐIỆN TỬ <span>VĂN TRỌNG</span></div>
+        <nav>
+          <a href="#dichvu">Dịch Vụ Sửa Chữa</a>
+          <a href="#quytrinhsuachua">Quy Trình Sửa Chữa</a>
+          <a href="#lienhe">Thông Tin Liên Hệ</a>
+        </nav>
+        <a href="tel:0373482792" class="btn-phone">📞 0373 482 792</a>
+      </div>
+    </header>
+
+    <!-- Phần Chính -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>Sửa đúng bệnh.<br />Dùng lại <span>an tâm.</span></h1>
+          <p>
+            Chuyên sửa chữa Tivi LED, Amply, Loa Kéo, Android Box, đóng pin theo
+            yêu cầu và các thiết bị điện tử dân dụng.<br />Sửa chữa minh bạch,
+            giá hợp lý, bảo hành dài hạn.
+          </p>
+          <div class="hero-buttons">
+            <a href="tel:0373482792" class="btn-main">📞 Gọi Ngay</a>
+            <a href="#lienhe" class="btn-outline">📍 Địa Chỉ Cửa Hàng</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <!-- Thay ảnh bên dưới bằng ảnh của bạn nhé -->
+          <img src="anhtrong.PNG" alt="anhtrong.PNG" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Dịch Vụ Sửa Chữa -->
+    <section class="services" id="dichvu">
+      <h2 class="section-title">Dịch Vụ Của Tôi</h2>
+
+      <a href="sua-tivi.html" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+    <div class="service-card">
+        <h3>📺 Sửa Tivi LED</h3>
+        <p>Ti vi mất nguồn, không đèn báo, không lên hình, vỡ màn hình hay có vấn đề khác. Nhấn xem chi tiết →</p>
+    </div>
+</a>
+ 
+        <div class="service-card">
+          <h3>🔊 Sửa Amply & Loa kéo</h3>
+          <p>dàn âm thanh của bạn đang bị cháy nổ, tiếng rè, ù hay bị xì</p>
+        </div>
+        <div class="service-card">
+          <h3>🔋 Đóng Pin theo yêu cầu</h3>
+          <p>
+            Bình pin, pin máy công cụ, pin sạc dự phòng, pin xe đạp điện, pin
+            loa nghe nhạc ...
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>🖥️ Thiết Bị Khác</h3>
+          <p>Android Box, thiết bị điện dân dụng và nhiều hơn...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quy Trình Sửa Chữa -->
+    <section
+      style="max-width: 800px; margin: 60px auto; padding: 0 20px"
+      id="quytrinhsuachua"
+    >
+      <h2 class="section-title">Quy Trình Sửa Chữa</h2>
+      <p style="text-align: center; font-size: 17px; line-height: 1.8">
+        <br />1. Tiếp nhận thông tin thiết bị hỏng từ khách hàng qua điện thoại
+        hoặc tin <br />2. Hẹn khách đem thiết bị đến cửa hàng hoặc đến tận nơi
+        <br />3. Kiểm tra thiết bị hư gì? và báo cho khách chi phí sửa chữa
+        <br />4. khách đồng ý thì bên tôi sẽ tiến hành sửa. khách không đồng ý
+        thì bên tôi sẽ không lấy bất kỳ chi phí nào và hoàn trả thiết bị lại cho
+        khách.
+      </p>
+    </section>
+
+    <!-- Liên Hệ -->
+    <section class="contact" id="lienhe">
+      <div class="contact-container">
+        <h2>Liên Hệ</h2>
+        <div class="contact-info">
+          <p>
+            <strong>📞 Điện thoại / Zalo:</strong>
+            <a href="tel:0373482792">0373 482 792</a>
+          </p>
+          <p><strong>📍 Địa chỉ:</strong> Hồng Ngự,Thường Lạc,Tỉnh Đồng Tháp</p>
+          <p>
+            <strong>📘 Facebook:</strong>
+            <a href="https://www.facebook.com/" target="_blank"
+              >Theo dõi & nhắn tin tại đây</a
+            >
+          </p>
+          <p>
+            <strong>🗺️ Bản đồ:</strong>
+            <a href="https://maps.app.goo.gl/BScDUxMtBdvrXy5w6" target="_blank"
+              >Xem đường đi</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chân trang -->
+    <footer>
+      <p>
+        <strong>🔧 Điện Tử Văn Trọng</strong> — Cảm ơn quý khách đã tin tưởng và
+        lựa chọn dịch vụ bên tôi
+      </p>
+      <p style="margin-top: 8px">Hotline: 0373 482 792 | Hồng Ngự, Đồng Tháp</p>
+    </footer>
+  </body>
+</html>
